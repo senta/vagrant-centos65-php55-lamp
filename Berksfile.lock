@@ -1,0 +1,17 @@
+DEPENDENCIES
+  httpd
+    path: site-cookbooks/httpd
+  mysql (~> 5.5.3)
+  php
+    path: site-cookbooks/php
+  yum (~> 3.5.3)
+
+GRAPH
+  httpd (0.1.0)
+  mysql (5.5.4)
+    yum-mysql-community (>= 0.0.0)
+  php (0.1.0)
+    yum (>= 0.0.0)
+  yum (3.5.3)
+  yum-mysql-community (0.1.14)
+    yum (>= 3.0)
